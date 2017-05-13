@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::get('/','homecontroller@index');
+Route::get('about','homecontroller@about');
+Route::resource('student','studentcontroller');
